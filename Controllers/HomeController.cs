@@ -6,8 +6,10 @@ namespace House_Renting_System.Controllers
 {
     public class HomeController : Controller
     {
-        public async IActionResult Index()
+        public IActionResult Index()
         {
+            //var model = new IndexViewModel();
+
             return View();
         }
 
