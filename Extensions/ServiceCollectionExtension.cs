@@ -8,7 +8,7 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static IServiceCollection AddApplicationServices (this IServiceCollection services)
         {
-            return service;
+            return services;
         }
 
         public static IServiceCollection AddApplicationDbContext (this IServiceCollection services, IConfiguration config)
