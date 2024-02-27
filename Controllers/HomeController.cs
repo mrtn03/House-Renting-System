@@ -1,16 +1,24 @@
 ﻿using House_Renting_System.Models;
+using HouseRentingSystem.Core.Models.Home;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace House_Renting_System.Controllers
+namespace HouseRentingSystem.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
+
         public IActionResult Index()
         {
-            //var model = new IndexViewModel();
+            var model = new IndexViewModel();
 
-            return View();
+            return View(model);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
