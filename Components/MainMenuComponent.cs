@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace House_Renting_System.Components
+namespace HouseRentingSystem.Components
 {
     public class MainMenuComponent : ViewComponent
     {
